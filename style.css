@@ -1,0 +1,85 @@
+
+body {
+    background-image: url('https://www.abajournal.com/images/mag_images/0818_FMOVIES_BACKGROUND.jpg');
+    background-repeat: no-repeat;
+  
+    background-size: cover;
+    margin:0px;
+  }
+h1 {
+    font-size:60px;
+    text-align:center;
+    border:white double 5px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background:rgba(0,0,0,0.5);
+    color:white;
+    margin:0px;
+    padding:5px;
+}
+h2 {
+  text-align: center;
+  color:white;
+  
+  height:75px;
+  margin:0;
+  padding-bottom: 1px;
+  
+}
+
+.container {
+  display:grid;
+  grid-template-columns:15% 60% 25%;
+  grid-template-rows: 100px 500px;
+
+}
+
+#trending {
+  border: double 4px white;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background: rgba(0,0,0,0.5);
+  margin:5px;
+  
+}
+#search {
+  border:solid 4px tomato;
+  grid-row-start: 2;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin:5px;
+}
+#discover {
+  border:double 4px white;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background: rgba(0,0,0,0.5);
+  margin:5px;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row-start: 2;
+  opacity:0.7;
+  height: 200px;
+  width:300px;
+  margin:10px;
+}
+
+#search_button {
+  width:150px;
+  height:30px;
+  margin:20px;
+  font-size:large;
+  background:rgba(184, 221, 20, 0.8);
+}
+
+#search_field {
+  width:80%;
+  height:30px;
+  background:rgba(0,0,0,0.8);
+  font-size:large;
+}
