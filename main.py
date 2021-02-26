@@ -7,10 +7,7 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 @app.after_request
 def add_header(r):
-    """
-    Add headers to both force latest IE rendering engine or Chrome Frame,
-    and also to cache the rendered page for 10 minutes.
-    """
+
     r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
     r.headers["Pragma"] = "no-cache"
     r.headers["Expires"] = "0"
@@ -20,7 +17,8 @@ def add_header(r):
 @app.route("/", methods=["POST", "GET"])
 def home():
     if request.method == "POST":
-	    user = request.form["movie_field"]           '''this line reads the data entered in the search bar on the site'''
+	    user = request.form["movie_field"]    
+                                                    #movie_field in the above line has the data entered in the search field on the webpage.   
 	    return redirect(url_for("user", usr=user))
     else:
 	    return render_template("index.html")

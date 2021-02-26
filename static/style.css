@@ -17,13 +17,21 @@ h1 {
     margin:0px;
     padding:5px;
 }
-h2 {
+#heading_trending {
   text-align: center;
-  color:white;
+ 
+  font-size: 35px;
+  margin:0; 
+  color:rgb(255, 60, 0);
   
-  height:75px;
-  margin:0;
-  padding-bottom: 1px;
+
+}
+#heading_discover{
+  text-align: center;
+ 
+  font-size: 35px;
+  margin:0; 
+  color:rgb(0, 140, 255);
   
 }
 
@@ -38,7 +46,7 @@ h2 {
   border: double 4px white;
   grid-row-start: 2;
   grid-row-end: 5;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
   margin:5px;
   
 }
@@ -56,6 +64,9 @@ h2 {
   grid-row-end: 5;
   background: rgba(0,0,0,0.5);
   margin:5px;
+  
+  align-items: center;
+  padding:0px;
 }
 
 #logo {
@@ -74,13 +85,23 @@ h2 {
   height:30px;
   margin:20px;
   font-size:large;
-  background:rgba(184, 221, 20, 0.8);
+  background:rgba(255, 187, 0, 0.8);
 }
 
 #search_field {
   width:80%;
   height:30px;
-  background:rgba(0,0,0,0.5);
+  background:rgba(0,0,0,0.7);
   font-size:large;
   color:white;
 }
+
+.sort {
+  background-color: rgba(0,0,0,0.5);
+  color:white;
+  font-size: large;
+  width:95%;
+  margin:2px;
+  height:30px;
+}
+

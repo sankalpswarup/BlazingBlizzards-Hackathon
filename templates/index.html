@@ -10,20 +10,36 @@
   <div class="container">
     <h1>BINGEWATCH</h1>
     <div id="trending">
-      <h2>Trending</h2>
-      
+      <h2 id="heading_trending">Trending</h2>
+      <hr>
     </div>
         
     <form action="#" method="post" id="search">
         <img src="/static/photo2.jpg" id="logo">
-        <input type="text" placeholder="Search your movie here" id="search_field" name="movie_field">
+        <input type="text" placeholder="What do you want to watch today?" id="search_field" name="movie_field">
         <p><input type="submit" value="Get Set Go" id="search_button"/></p>
     </form>
 
-    <div id="discover">
-      <h2>Discover</h2>
-    </div>
-  </div>
+     
+      <form id="discover">
+        <h2 id="heading_discover">Discover</h2>  
+        <hr>      
+        <select id="sort" name="sort" class="sort">
+          <option>Sort Movies By:</option>
+          <option value="popularity">Popularity</option>
+          <option value="release_date">Release Date</option>
+          <option value="revenue">Revenue</option>
+          <option value="vote_count">Vote Count</option>
+        </select>
+        <select id="order" name="order" class="sort">
+          <option>Order</option>
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+          </select>
+      </form>
+
+ 
+  
 </body>
 </html>
 
