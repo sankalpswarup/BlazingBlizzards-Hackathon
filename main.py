@@ -9,7 +9,7 @@ load_dotenv()
 
 API_KEY = os.getenv('PROJECT_API_KEY')
 tmdb = TMDb()
-tmdb.api_key = '0c8cda0ec2f25eaa3eaf18991dde2e6c'
+tmdb.api_key = API_KEY
 
 
 app=Flask(__name__)
