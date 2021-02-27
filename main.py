@@ -37,10 +37,10 @@ def index():
     temp2=''
     for m in movie1:
         temp+=m.title
-        temp+='<br>'
+        temp+='<hr>'
     for n in movie2:
         temp2+=n.title
-        temp2+='<br>'
+        temp2+='<hr>'
     return render_template('index.html', mov=temp, mov2=temp2)
 
 @app.route("/", methods=["POST"])
@@ -50,9 +50,19 @@ def home():
     search = movie.search(request.form["movie_field"])
     s=''
     for res in search:
+        name=res.title
+        nm_list=name.split()
+        
+
         s+='<p style="text-align:center;font-size:30px;">'
-        s+=(res.title)
-        s+='</p>'
+        s+='<a href="https://www.google.com/search?q='
+        for nm in nm_list :
+            s+=nm+"+"
+        s=s[:-1]
+        s+='+movie" target="_blank">'
+        s+=(name)
+        s+='</a>'
+        s+='</p><hr>'
         #movie_field in the above line has the data entered in the search field on the webpage.
     
     return render_template('pass.html', movies=s)

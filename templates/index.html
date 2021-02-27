@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <title>BingeWatch</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
@@ -11,9 +12,9 @@
     <h1>BINGEWATCH</h1>
     <div id="trending">
       <h2 id="heading_trending">Trending</h2> <hr>
-      <p style="color:white">{% autoescape false %}
+      <div id="trending_list">{% autoescape false %}
         {{mov}}
-    {% endautoescape %}</p> 
+    {% endautoescape %}</div> 
       
     </div>
         
@@ -27,9 +28,9 @@
     <div id="latest_releases">
       <h2 id="heading_releases">Latest Releases</h2>
       <hr>
-      <p style="color:white">{% autoescape false %}
+      <div id="latest_list">{% autoescape false %}
         {{mov2}}
-    {% endautoescape %}</p> 
+    {% endautoescape %}</div> 
     </div>
 
     <!-- DO NOT DELETE THESE COMMENTS< THEY ARE FOR FUTURE USE -->

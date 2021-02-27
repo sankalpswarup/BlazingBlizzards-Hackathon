@@ -2,7 +2,7 @@
 body {
   background-image: url("/static/background.png");
   background-repeat: no-repeat;
-
+  background-attachment: fixed;
   background-size: cover;
   margin:0px;
 }
@@ -38,7 +38,7 @@ h1 {
 .container {
   display:grid;
   grid-template-columns:15% 60% 25%;
-  grid-template-rows: 100px 500px;
+  grid-template-rows: 100px 100%;
 
 }
 
@@ -46,9 +46,9 @@ h1 {
   border: double 4px white;
   grid-row-start: 2;
   grid-row-end: 5;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.8);
   margin:5px;
-  
+  padding-left:5px;
 }
 #search {
   border:solid 4px tomato;
@@ -62,11 +62,11 @@ h1 {
   border:double 4px white;
   grid-row-start: 2;
   grid-row-end: 5;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
   margin:5px;
-  
+  padding-left:5px;
   align-items: center;
-  padding:0px;
+  
 }
 
 #logo {
@@ -105,3 +105,15 @@ h1 {
   height:30px;
 }
 
+#latest_list {
+  color:rgb(115, 157, 235);
+  font-size: large;
+
+
+}
+
+#trending_list {
+  color:rgb(231, 155, 111);
+  font-size: large;
+  
+}

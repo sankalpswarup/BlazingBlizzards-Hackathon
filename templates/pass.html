@@ -2,22 +2,18 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
-<title>pass</title>
-<style>
-body {
-  background-image: url('https://www.abajournal.com/images/mag_images/0818_FMOVIES_BACKGROUND.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-</style>
+	<meta charset="UTF-8">
+	<title>BingeWatch - Results</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
 </head>
 <body>
-	<p>
-		{% autoescape false %}
-    		{{movies}}
-		{% endautoescape %}
-		
-	</p>
+	<div class="container">
+		<div id="searched_movies">
+			<h1 id="heading">Movies & TV Series as per your search</h1>
+			<hr>
+			{% autoescape false %}
+    			{{movies}}
+			{% endautoescape %}
+		</div>
+	</div>
 </body>
