@@ -16,5 +16,5 @@ FEATURES:
 4) You can click on any movie to open a google search about the movie, to know more about it.
 5) The web app enables you to search for a part of a movie name, gives you a number of relevant results
    among movies. 
-6) Then you can hover your mouse on your desired movie to go to discover an overview of the movie.
+6) You can hover your mouse on any movie in the search list to get an overview of the movie.
 7) You can also click on a movie from the search results to open a google search for it.
