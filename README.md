@@ -12,7 +12,9 @@ The .env file should be placed in the folder having main.py file.
 FEATURES:
 1) The web app tells you what are the Trending movies at present from a global list of movies.
 2) It gives you what are the Latest releases among TV series and Movies.
-3) It enables you to search for a part of a movie name, gives you a number of relevant results
-   among movies and TV series. Then you can click on your desired movie to go to discover more about the movie,
-   as it opens a google search for it.
-
+3) You can hover your mouse over the desired movie to get a brief overview of the movie.
+4) You can click on any movie to open a google search about the movie, to know more about it.
+5) The web app enables you to search for a part of a movie name, gives you a number of relevant results
+   among movies. 
+6) Then you can hover your mouse on your desired movie to go to discover an overview of the movie.
+7) You can also click on a movie from the search results to open a google search for it.
