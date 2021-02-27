@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>pass</title>
+<style>
+body {
+  background-image: url('https://www.abajournal.com/images/mag_images/0818_FMOVIES_BACKGROUND.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+	<p>
+		{% autoescape false %}
+    		{{movies}}
+		{% endautoescape %}
+		
+	</p>
+</body>
