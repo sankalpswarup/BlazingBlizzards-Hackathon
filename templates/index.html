@@ -18,10 +18,48 @@
       
     </div>
         
-    <form action="#" method="post" id="search">
+    <form action="searched" method="post" id="search">
         <img src="/static/photo2.jpg" id="logo">
-        <input type="text" placeholder="What do you like to watch today?" id="search_field" name="movie_field">
-        <p><input type="submit" value="Get Set Go" id="search_button"/></p>
+        <input type="text" placeholder="What would you like to watch today?" id="search_field" name="movie_field" class="textfield">
+        <input type="submit" value="Get Set Go" id="search_button"/>
+    </form>
+
+    <form action="discover" method="post" id="discover">
+      <h2 id="discover_heading">Discover</h2>
+      <hr>
+
+      <select id="genre" name="genre" class="dropdown">
+        <option value=28>Genre: Action</option>
+        <option value=12>Genre: Adventure</option>
+        <option value=35>Genre: Comedy</option>
+        <option value=80>Genre: Crime</option>
+        <option value=99>Genre: Documentry</option>
+        <option value=18>Genre: Drama</option>
+        <option value=14>Genre: Fantasy</option>
+        <option value=27>Genre: Horror</option>
+        <option value=10749>Genre: Romance</option>
+        <option value=9648>Genre: Mystery</option>
+        <option value=878>Genre: Science Fiction</option>
+        <option value=53>Genre: Thriller</option>
+      </select>      
+     
+      <select id="language" name="language" class="dropdown">        
+        <option value="en">Language: English</option>
+        <option value="hi">Language: Hindi</option>
+        <option value="fr">Language: Spanish</option>
+        <option value="bn">Language: Bengali</option>
+      </select>
+
+      <select id="sort" name="sort" class="dropdown">        
+        <option value="popularity.desc">Sort By: Decreasing Popularity</option>        
+        <option value="popularity.asc">Sort By: Increasing Popularity</option>
+        <option value="primary_release_date.desc">Sort By: Release Date: Newest</option>
+        <option value="primary_release_date.asc">Sort By: Release Date: Oldest</option>
+      </select>
+
+      <input type="text" placeholder="Year:" id="year" name="year" class="textfield2" >
+      
+      <input type="submit" value="Go" id="discover_button"/>
     </form>
 
      
@@ -32,28 +70,6 @@
         {{mov2}}
     {% endautoescape %}</div> 
     </div>
-
-    <!-- DO NOT DELETE THESE COMMENTS< THEY ARE FOR FUTURE USE -->
-
-      <!--<form id="discover">
-        <h2 id="heading_discover">Discover</h2>  
-        <hr>      
-        <select id="sort" name="sort" class="sort">
-          <option>Sort Movies By:</option>
-          <option value="popularity">Popularity</option>
-          <option value="release_date">Release Date</option>
-          <option value="revenue">Revenue</option>
-          <option value="vote_count">Vote Count</option>
-        </select>
-        <select id="order" name="order" class="sort">
-          <option>Order</option>
-          <option value="asc">Ascending</option>
-          <option value="desc">Descending</option>
-          </select>
-      </form>-->
-
- 
-  
 </body>
 </html>
 

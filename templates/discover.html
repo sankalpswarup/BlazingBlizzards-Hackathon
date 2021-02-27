@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>BingeWatch-Discover</Title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    </head>
+    <body>
+        <div class="container">
+		<div id="searched_movies">
+			<h1 id="heading">Movies as per your Liking</h1>
+			<hr>
+			{% autoescape false %}
+    			{{movies}}
+			{% endautoescape %}
+		</div>
+	</div>
+    </body>
+</html>
