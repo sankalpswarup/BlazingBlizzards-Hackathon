@@ -36,10 +36,12 @@ def index():
     temp=''
     temp2=''
     for m in movie1:
-        temp+=m.title
+        temp+='<a style="color:LightPink;text-decoration:none;" href="https://www.google.com/search?q='+m.title+'+movie" target="_blank" title="'+m.overview+'">'
+        temp+=m.title+'</a>'
         temp+='<hr>'
     for n in movie2:
-        temp2+=n.title
+        temp2+='<a style="color:LightSkyBlue;text-decoration:none;" href="https://www.google.com/search?q='+n.title+'+movie" target="_blank" title="'+n.overview+'">'
+        temp2+=n.title+'</a>'
         temp2+='<hr>'
     return render_template('index.html', mov=temp, mov2=temp2)
 
@@ -59,7 +61,7 @@ def home():
         for nm in nm_list :
             s+=nm+"+"
         s=s[:-1]
-        s+='+movie" target="_blank">'
+        s+='+movie" target="_blank" title="'+res.overview+'">'
         s+=(name)
         s+='</a>'
         s+='</p><hr>'
