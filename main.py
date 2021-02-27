@@ -9,7 +9,7 @@ load_dotenv()
 
 API_KEY = os.getenv('PROJECT_API_KEY')
 tmdb = TMDb()
-tmdb.api_key = API_KEY
+tmdb.api_key = '0c8cda0ec2f25eaa3eaf18991dde2e6c'
 
 
 app=Flask(__name__)
@@ -32,11 +32,16 @@ def index():
     movie=Movie()
     discover = Discover()
     movie1 = discover.discover_movies({'sort_by' : 'popularity.desc'})
+    movie2 = discover.discover_movies({'sort_by': 'release_date.desc'})
     temp=''
+    temp2=''
     for m in movie1:
         temp+=m.title
         temp+='<br>'
-    return render_template('index.html', mov=temp)
+    for n in movie2:
+        temp2+=n.title
+        temp2+='<br>'
+    return render_template('index.html', mov=temp, mov2=temp2)
 
 @app.route("/", methods=["POST"])
 def home():
