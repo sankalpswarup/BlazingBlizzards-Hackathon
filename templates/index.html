@@ -10,11 +10,11 @@
   <div class="container">
     <h1>BINGEWATCH</h1>
     <div id="trending">
-      <h2 id="heading_trending">Trending</h2>
+      <h2 id="heading_trending">Trending</h2> <hr>
       <p style="color:white">{% autoescape false %}
         {{mov}}
     {% endautoescape %}</p> 
-      <hr>
+      
     </div>
         
     <form action="#" method="post" id="search">
@@ -24,7 +24,14 @@
     </form>
 
      
-      <form id="discover">
+    <div id="latest_releases">
+      <h2 id="heading_releases">Latest Releases</h2>
+      <hr>
+    </div>
+
+    <!-- DO NOT DELETE THESE COMMENTS< THEY ARE FOR FUTURE USE -->
+
+      <!--<form id="discover">
         <h2 id="heading_discover">Discover</h2>  
         <hr>      
         <select id="sort" name="sort" class="sort">
@@ -39,7 +46,7 @@
           <option value="asc">Ascending</option>
           <option value="desc">Descending</option>
           </select>
-      </form>
+      </form>-->
 
  
   

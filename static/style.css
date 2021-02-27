@@ -26,7 +26,7 @@ h1 {
   
 
 }
-#heading_discover{
+#heading_releases {
   text-align: center;
  
   font-size: 35px;
@@ -58,7 +58,7 @@ h1 {
   align-items: center;
   margin:5px;
 }
-#discover {
+#latest_releases {
   border:double 4px white;
   grid-row-start: 2;
   grid-row-end: 5;

@@ -3,15 +3,31 @@ from flask import Flask, redirect, url_for, render_template, request
 from tmdbv3api import Movie
 from tmdbv3api import Discover
 from tmdbv3api import TMDb
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+API_KEY = os.getenv('PROJECT_API_KEY')
 tmdb = TMDb()
-tmdb.api_key = '0c8cda0ec2f25eaa3eaf18991dde2e6c'
+tmdb.api_key = API_KEY
 
 
 app=Flask(__name__)
 
+@app.after_request
+def add_header(r):
+    """
+    Add headers to both force latest IE rendering engine or Chrome Frame,
+    and also to cache the rendered page for 10 minutes.
+    """
+    r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    r.headers["Pragma"] = "no-cache"
+    r.headers["Expires"] = "0"
+    r.headers['Cache-Control'] = 'public, max-age=0'
+    return r
+
 
 @app.route('/')
-
 def index():
     movie=Movie()
     discover = Discover()
