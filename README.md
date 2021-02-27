@@ -3,8 +3,9 @@
 Run the main.py file to start the web app.
 
 While defining .env file, use the format given below:
-PROJECT_API_KEY=Your API Key here
-and the .env file should be placed in the folder having main.py file.
+PROJECT_API_KEY=Your API Key here.
+
+The .env file should be placed in the folder having main.py file.
 
 FEATURES:
 1) The web app tells you what are the Trending movies at present from a global list of movies.
