@@ -1,6 +1,14 @@
 # BlazingBlizzards-Hackathon
-
-Run the main.py file to start the web app.
+#Steps to run
+1) Clone the repo in your system
+2) download and install python
+3) install tmdb3api module
+4) install flask module
+5) intstall dotenv module
+6) Open the cloned repo directory containing main.py file
+7) run main.py file by command- 'python main.py'
+8) In terminal you will see- Running on {URL} (Press CTRL+C to quit)
+9) Open that URL in your browser
 
 TMDB API has been used in this project.
 
